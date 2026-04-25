@@ -1,0 +1,240 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3f3f3, #d9e4f5);
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.site-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.notifications {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+.profile-sidebar {
+    flex: 1 1 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-height: 500px;
+}
+
+.profile-header {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #667eea;
+        margin-bottom: 10px;
+    }
+
+#uploadPhoto {
+    display: none;
+}
+
+.upload-btn {
+    padding: 10px 14px;
+    background: #667eea;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+    .upload-btn:hover {
+        background: #764ba2;
+    }
+
+.profile-info {
+    flex-grow: 1;
+}
+
+    .profile-info h2 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .profile-info p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+#userDescription {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Табл оцінок */
+.grades-section {
+    flex: 2 1 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-height: 600px;
+}
+
+    .grades-section h2 {
+        margin-bottom: 20px;
+    }
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .grades-table th,
+    .grades-table td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .grades-table th {
+        background: #667eea;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .grades-table td {
+        background: #f9f9f9;
+    }
+
+/* Портфоліо */
+.portfolio-section {
+    flex-basis: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+    .portfolio-wrapper img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #667eea;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-wrapper .portfolio-caption {
+        margin-top: 5px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+.btn {
+    margin-top: 10px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    .btn:hover {
+        background: #764ba2;
+    }
+
+/* Контейнер для робіт */
+.portfolio-wrapper .portfolio-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #667eea;
+    border-radius: 10px;
+    padding: 5px;
+    background: #f9f9f9;
+}
+
+    .portfolio-wrapper .portfolio-item .delete-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #df594d !important; 
+        color: #fff !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+        text-align: center;
+        transition: background 0.3s;
+    }
+
+        .portfolio-wrapper .portfolio-item .delete-btn:hover {
+            background: red !important;
+        }
+
+.portfolio-wrapper .portfolio-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+

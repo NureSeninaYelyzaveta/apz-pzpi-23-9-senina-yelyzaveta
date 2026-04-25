@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtProgress | Профіль студента</title>
+    <link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="site-title">ArtProgress</h1>
+        <div class="notifications" id="notifications">
+         
+        </div>
+    </header>
+
+    <main>
+
+        <aside class="profile-sidebar">
+
+            <div class="profile-header">
+                <div class="profile-photo">
+                    <img id="profilePhoto" src="img/default-avatar.png" alt="Фото профілю">
+
+                    <input type="file" id="uploadPhoto" accept="image/*">
+                    <label for="uploadPhoto" class="upload-btn">
+                        Змінити фото профілю
+                    </label>
+                </div>
+
+                <div class="profile-info">
+                    <h2 id="userName">Ім'я користувача</h2>
+                    <p id="userRole">Роль користувача</p>
+                    <textarea id="userDescription" placeholder="Додайте опис профілю..."></textarea>
+                </div>
+            </div>
+
+        </aside>
+
+        <section class="grades-section">
+            <h2>Мої оцінки</h2>
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Предмет</th>
+                        <th>Оцінка</th>
+                        <th>Вчитель</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody id="gradesTable">
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section class="portfolio-section">
+            <h2>Портфоліо</h2>
+            <div class="portfolio-wrapper" id="portfolioWrapper">
+               
+            </div>
+            <button class="btn" id="addPortfolioBtn">Додати роботу</button>
+        </section>
+
+    </main>
+
+    <script src="js/student.js"></script>
+</body>
+</html>
